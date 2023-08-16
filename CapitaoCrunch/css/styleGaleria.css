@@ -1,0 +1,511 @@
+.dropb {
+  background-color: #02630ab4;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+.top{
+  float: right;
+  padding-right: 15px;
+  font-size: larger;
+}
+.top:hover{
+  font-size: 130%;
+}
+.hp{
+  padding: 14px;
+  width: 3vw;
+  height: 3vh;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.drop-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #02630ab4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.281);
+  z-index: 1;
+  font-size: 20px;
+}
+.drop-conteudo a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.drop-conteudo a:hover {background-color: rgb(0, 0, 0);}
+.dropdown:hover .drop-conteudo {display: block;}
+.dropdown:hover .dropb {background-color: #02630a;}
+
+.bot{
+  display: flex;
+  justify-content: space-around;
+}
+.texto1{
+  text-align: justify;
+  color: rgb(216, 209, 203);
+  text-shadow: 0 0 5px #02630a, 0 0 5px #0000FF;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 65%;
+  box-sizing: border-box;
+}
+.texto2{
+  text-align: justify;
+  color: rgb(216, 209, 203);
+  text-shadow: 0 0 5px #02630a, 0 0 5px #0000FF;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 65%;
+  box-sizing: border-box;
+}
+.legenda
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: rgb(216, 209, 203);
+  text-shadow: 0 0 5px #02630a, 0 0 5px #0000FF;
+  width: 450px;
+  text-align: center;
+}
+body{
+  background-image: url("../imagens/2pjj.gif");
+}
+.logoCPN{
+  width: 330px;
+  height: 165px;
+}
+.logo2{
+  position: relative;
+  margin: auto;
+  padding-left: 39%;
+}
+.imagemTexto1{
+  padding: 20px 5px 20px 40px;
+}
+.imagemTexto2{
+  padding: 20px 80px 20px 5px;
+    
+}
+.bloco1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+.bloco2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  text-indent: 3em; 
+}
+.imagemTexto1:hover{
+  transform: scale(1.025);
+  transition: 0.4s;
+  border-radius: 0.25em;
+}
+.imagemTexto1:not(:hover){
+  transition: 0.4s;
+}
+.imagemTexto2:hover{
+  transform: scale(1.025);
+  transition: 0.5s;
+  border-radius: 0.25em;
+}
+.imagemTexto2:not(:hover){
+  transition: 0.4s;
+}
+
+
+#circulo
+{
+  position: fixed; /*ajustado para o círculo não ficar no canto oposto da tela*/
+  top: 80px;
+  right: 20px;
+  z-index: 9999; /*coloca o circulo preto em cima do outro circulo*/
+}
+#botao_circulo
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: 2px green;
+  border-radius: 50%;
+  box-shadow: 0px 10px 25px rgba(122, 122, 122, 0.5);
+  transition: all 0.2s ease-in-out; /*controla a transição de quando coloca o mouse por cima: tempo, quantos elementos, ease-in-out cria o fade-out*/
+}
+#botao_circulo img:first-child /*first child marca a primeira imagem da div círculo, no caso o clique aqui*/
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*para ajustar a posição da imagem dentro do círculo*/
+  height: 25px;
+  width: 49px;
+  z-index: 2;
+}
+#botao_circulo img:last-child /*last child marca a segunda imagem da div círculo, no caso a lampada*/
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*para ajustar a posição da imagem dentro do círculo*/
+  width: 35px;
+  height: 40px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; /*controla a transição de quando coloca o mouse por cima: tempo, 
+  quantos elementos, ease-in-out cria o fade-out*/
+  z-index: 1; /*posição para ficar abaixo do clique aqui*/
+}
+#botao_circulo:hover
+{
+  background-color: green;
+  box-shadow: 0px 10px 25px rgba(122, 122, 122, 0.5);
+}
+
+#botao_circulo:hover img:last-child
+{
+  opacity: 1;
+  box-shadow: 0px 10px 25px rgba(122, 122, 122, 0.5);
+}
+
+#botao_circulo:hover img:first-child
+{
+  opacity: 0;
+  box-shadow: 0px 10px 25px rgba(122, 122, 122, 0.5);
+}
+
+#quadrado
+{
+  position: fixed;
+  right: 86px;
+  top: 71px;
+  background-color: #000000;
+  border-radius: 3px; /* bordas arredondadas do quadrado */
+  width: 300px; /* largura */
+  height: 300px; /* altura */
+  box-shadow: 10px 10px 25px 10px rgba(122, 122, 122, 0.5); /* sombra */
+  display: none;
+  text-align: center; /* alinhamento do texto */
+  z-index: 55;
+  border-color: green; /* cor da borda */
+}
+#quadrado.show 
+{
+  right: 60px; /*posição de onde o quadrado vai aparecer*/
+}
+#quadrado img  
+{
+  max-width: 100%; /* largura maxima da imagem */
+  max-height: 100%; /* altura maxima da imagem */
+  border-radius: 8px 8px 8px 8px; /* bordas arredondadas da imagem */
+}
+#imgCuriosidade{
+  width: 80%;
+  height: 55%;
+}
+#quadrado p 
+{
+  margin-top: 20px; /* margim superior */
+  color: green; /* cor */
+  font-weight: bold;
+  font-size: 0.8rem; /* tamanho da fonte */
+}
+a:link{
+  color: #fff;
+}
+
+/* Rodapé */
+
+#barra {
+  position: fixed; /* mantém a barrinha presa na parte de baixo */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px; /*altura da barrinha */
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9; /*opacidade pra ficar meio transparante*/
+  color: #00FF00;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px; /*mexe na altura dos textos dentro da barrinha*/
+  padding-left: 20px;
+  transition: 0.5s; 
+  z-index: 100;
+}
+#barra:hover {
+  height: 25%; /*passar mouse na barrinha e tamanho do retângulo*/
+}
+#barra:hover .informa {
+  opacity: 1; /*deixa a opacidade 0 de antes em 1 e faz aparecer o texto*/
+  transform: translateY(0); /* importante para o texto não ficar cortado pela página*/
+}
+.informa {
+  opacity: 0; /*deixa o texto invisível antes de passar o mouse*/
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  transition: opacity 0.5s, transform 0.5s; /*ajuda na transição do texto*/
+  transform: translateY(200px); /*ajusta a "hitbox" da transformação do efeito da barrinha subindo*/
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.informa p, .informa h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.informa-esq {
+  position: absolute; /*esse e outros arrumam a posição dos blocos de texto para não ficar uma bagunça*/
+  left: 0;
+  width: 30%;
+  top: -210px;
+}
+
+.informa-meio {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  top: -200px;
+}
+
+.informa-dir {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  top: -200px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 1600px) {
+  /* Estilos específicos para o Samsung Galaxy S20 Ultra */
+  /* Aqui você pode definir regras de CSS para ajustar o layout, tamanhos de fonte, espaçamento, etc. */
+  
+.top{
+  display: none;
+}
+
+#barra:hover {
+  height: 30%; /*passar mouse na barrinha e tamanho do retângulo*/
+}
+.informa-meio {
+  top: -205px;
+}
+
+.informa-dir {
+  right: 50px;
+}
+}
+
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+  /* Estilos específicos para o Samsung Galaxy S20 Ultra */
+  /* Aqui você pode definir regras de CSS para ajustar o layout, tamanhos de fonte, espaçamento, etc. */
+
+.top{
+  position: relative;
+  bottom: -3010px;
+  display: block;
+}
+.logoCPN{
+  width: 320px;
+  height: 150px;
+  margin-left: 45px;
+}
+.logo2{
+  position: relative;
+  padding-left: 0%;
+}
+
+.bot{
+  display: block;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.dropb {
+  padding: 10px;
+  width: 40vw;
+  height: 3.8vh;
+  margin-left: 10px;
+}
+.hp{
+  padding: 10px;
+  width: 10vw;
+  height: 3vh;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.dropdown {
+  position: relative;
+}
+.drop-conteudo {
+  position: left;
+  background-color: #02630ab4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.281);
+  z-index: 1;
+  font-size: 20px;
+}
+.drop-conteudo a {
+  color: rgb(255, 255, 255);
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  width: 70%;
+  text-align: left;
+}
+
+/*imagens e texto*/
+
+.texto
+{
+  text-align: justify;
+  color: rgb(216, 209, 203);
+  text-shadow: 0 0 5px #02630a, 0 0 5px #0000FF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  height: 100px;
+  width: 300px;
+  top: 280px;
+  font-size: 1.5rem;
+  box-sizing:content-box;
+}
+.img1{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 40px;
+  right: 194px;
+}
+.img2{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 500px;
+  right: 335.5px;
+}
+.img3{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 840px;
+  right: 193px;
+}
+.img4{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 1325px;
+  right: 335px;
+}
+.img5{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 1680px;
+  right: 192px;
+}
+.img6{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 2150px;
+  right: 335.2px;
+}
+.img7{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 2265px;
+  right: 193px;
+}
+.img8{
+  position: relative;
+  height: 10px;
+  width: 10px;
+  top: 3085px;
+  right: 335.5px;
+  padding-bottom: 55vh;
+}
+
+/*botão*/
+#circulo
+{
+  top: 50%;
+  right: 5%;
+}
+#quadrado
+{
+  top: 50%;
+  right: 20.5%;
+  width: 250px; /* largura */
+  height: 250px; /* altura */
+}
+#quadrado img  
+{
+  max-width: 50%; /* largura maxima da imagem */
+  max-height: 50%; /* altura maxima da imagem */
+}
+
+
+/*rodapé*/
+#barra {
+  line-height: 15px; /*distância entre linhas dos textos dentro da barrinha*/
+}
+#barra:hover{
+  height: 50%;
+}
+.informa {
+  transition: opacity 0.8s, transform 0.8s; /*ajuda na transição do texto*/
+  width: 120%;
+}
+.informa {
+  font-size: .6rem;
+  left: 100px;
+}
+.informa p, .informa h3 {
+  text-align: center;
+  padding: 5px;
+}
+
+.informa-esq {
+  left: 0px;
+  width: 40%;
+  top: -390px;
+}
+
+.informa-meio {
+  left: 0px;
+  width: 40%;
+  top: -290px;
+}
+
+.informa-dir {
+  left: 0px;
+  width: 40%;
+  top: -120px;
+}
+}
+

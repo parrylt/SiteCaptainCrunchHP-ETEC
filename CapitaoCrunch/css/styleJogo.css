@@ -1,0 +1,1382 @@
+.dropb {
+  background-color: #02630ab4;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+.hp{
+  padding: 14px;
+  width: 3vw;
+  height: 3vh;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.drop-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #02630ab4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.281);
+  z-index: 1;
+  font-size: 20px;
+}
+.drop-conteudo a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.drop-conteudo a:hover {background-color: rgb(0, 0, 0);}
+.dropdown:hover .drop-conteudo {display: block;}
+.dropdown:hover .dropb {background-color: #02630a;}
+
+.bot{
+  display: flex;
+  justify-content: space-around;
+}
+.texto{
+  text-align: justify;
+  color: rgb(216, 209, 203);
+  text-shadow: 0 0 5px #02630a, 0 0 5px #0000FF;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 55%;
+  box-sizing: border-box;
+}
+.img{
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+body{
+  background-image: url("../imagens/2pjj.gif");
+}
+.logoCPN{
+  width: 330px;
+  height: 165px;
+}
+.logo2{
+  position: relative;
+  margin: auto;
+  padding-left: 39%;
+}
+.imagemTexto{
+  padding: 20px 50px 20px 5px;
+}
+.bloco1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+.bloco2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  text-indent: 3em; 
+}
+.blueBox{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17.5%;
+  z-index: 1;
+}
+#DivContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+#DivImagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+.fade-out {
+  animation: fadeOut 0.5s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*botões do jogo*/
+
+.bbotao1{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 61.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 6;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao1:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao2{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 61.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao2:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao3{
+  position: absolute;
+  margin-left: -0.09%;
+  top: 61.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao3:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoA{
+  position: absolute;
+  margin-left: 2%;
+  top: 61.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoA:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao4{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 64.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao4:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao5{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 64.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao5:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao6{
+  position: absolute;
+  margin-left: -0.09%;
+  top: 64.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao6:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoB{
+  position: absolute;
+  margin-left: 2%;
+  top: 64.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoB:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao7{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 68.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao7:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao8{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 68.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao8:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao9{
+  position: absolute;
+  margin-left: -0.09%;
+  top: 68.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao9:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoC{
+  position: absolute;
+  margin-left: 2%;
+  top: 68.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoC:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoAST{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 72.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 10px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoAST:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao0{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 72.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao0:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoHash{
+  position: absolute;
+  margin-left: -0.09%;
+  top: 72.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoHash:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoD{
+  position: absolute;
+  margin-left: 2%;
+  top: 72.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoD:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+
+
+/*rodapé*/
+
+#barra {
+  position: fixed; /* mantém a barrinha presa na parte de baixo */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px; /*altura da barrinha */
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9; /*opacidade pra ficar meio transparante*/
+  color: #00FF00;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px; /*mexe na altura dos textos dentro da barrinha*/
+  padding-left: 20px;
+  transition: 0.5s; 
+  z-index:10;
+}
+#barra:hover {
+  height: 25%; /*passar mouse na barrinha e tamanho do retângulo*/
+}
+#barra:hover .informa {
+  opacity: 1; /*deixa a opacidade 0 de antes em 1 e faz aparecer o texto*/
+  transform: translateY(0); /* importante para o texto não ficar cortado pela página*/
+}
+.informa {
+  opacity: 0; /*deixa o texto invisível antes de passar o mouse*/
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  transition: opacity 0.5s, transform 0.5s; /*ajuda na transição do texto*/
+  transform: translateY(200px); /*ajusta a "hitbox" da transformação do efeito da barrinha subindo*/
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  z-index:11;
+}
+.informa p, .informa h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  z-index:12;
+}
+.informa-esq {
+  position: absolute; /*esse e outros arrumam a posição dos blocos de texto para não ficar uma bagunça*/
+  left: 0;
+  width: 30%;
+  top: -210px;
+  z-index:12;
+}
+.informa-meio {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  top: -200px;
+  z-index:12;
+}
+.informa-dir {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  top: -200px;
+  z-index:12;
+}
+
+/* RESPONSIVIDADE */
+
+@media only screen and (max-width: 1620px) {
+  /* Estilos específicos para o Samsung Galaxy S20 Ultra */
+  /* Aqui você pode definir regras de CSS para ajustar o layout, tamanhos de fonte, espaçamento, etc. */
+
+/*botões do jogo*/
+
+.bbotao1{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 6;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao1:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao2{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao2:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao3{
+  position: absolute;
+  margin-left: 0.1%;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao3:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoA{
+  position: absolute;
+  margin-left: 2.3%;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoA:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao4{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao4:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao5{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao5:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao6{
+  position: absolute;
+  margin-left: 0.1%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao6:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoB{
+  position: absolute;
+  margin-left: 2.3%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoB:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao7{
+  position: absolute;
+  margin-left: -4.3%;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao7:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao8{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao8:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao9{
+  position: absolute;
+  margin-left: 0.1%;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao9:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoC{
+  position: absolute;
+  margin-left: 2.3%;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoC:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoAST{
+  position: absolute;
+  margin-left: -4.25%;
+  top: 83.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 11px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoAST:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao0{
+  position: absolute;
+  margin-left: -2.2%;
+  top: 83.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao0:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoHash{
+  position: absolute;
+  margin-left: 0.1%;
+  top: 83.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 9px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoHash:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoD{
+  position: absolute;
+  margin-left: 2.3%;
+  top: 83.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4.5px 8px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoD:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+
+#barra:hover {
+  height: 30%; /*passar mouse na barrinha e tamanho do retângulo*/
+}
+.informa-meio {
+  top: -205px;
+}
+
+.informa-dir {
+  right: 50px;
+}
+}
+
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+  /* Estilos específicos para o Samsung Galaxy S20 Ultra */
+  /* Aqui você pode definir regras de CSS para ajustar o layout, tamanhos de fonte, espaçamento, etc. */
+  /*logotipo*/
+
+.logoCPN{
+  width: 320px;
+  height: 150px;
+  margin-left: 45px;
+}
+.logo2{
+  position: relative;
+  padding-left: 0%;
+}
+  
+  /*dropdown*/
+.bot{
+  display: block;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.dropb {
+  padding: 10px;
+  width: 40vw;
+  height: 3.8vh;
+  margin-left: 10px;
+}
+.hp{
+  padding: 10px;
+  width: 10vw;
+  height: 3vh;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.dropdown {
+  position: relative;
+}
+.drop-conteudo {
+  position: left;
+  background-color: #02630ab4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.281);
+  z-index: 1;
+  font-size: 20px;
+}
+.drop-conteudo a {
+  color: rgb(255, 255, 255);
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+  width: 70%;
+}
+.drop-conteudo a:hover {background-color: rgb(0, 0, 0);}
+.dropdown:hover .drop-conteudo {display: block;}
+.dropdown:hover .dropb {background-color: #02630a;}
+
+
+/*imagens e texto*/
+.imagemTexto{
+  padding: 0px 0px 0px 0px;
+}
+
+
+/*jogo*/
+
+#DivContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+#DivImagem {
+  max-width: 100%;
+  max-height: 100%;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 690px;
+}
+
+#DivImagem img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.blueBox{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 62.5%;
+  z-index: 1;
+}
+
+
+/*botões do jogo*/
+
+.bbotao1{
+  position: absolute;
+  margin-left: -12.7%;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 6;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao1:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao2{
+  position: absolute;
+  margin-left: -4.7%;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao2:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao3{
+  position: absolute;
+  margin-left: 3.6%;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao3:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoA{
+  position: absolute;
+  margin-left: 11.8%;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoA:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao4{
+  position: absolute;
+  margin-left: -12.7%;
+  top: 70.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao4:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao5{
+  position: absolute;
+  margin-left: -4.7%;
+  top: 70.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao5:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao6{
+  position: absolute;
+  margin-left: 3.6%;
+  top: 70.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao6:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoB{
+  position: absolute;
+  margin-left: 11.8%;
+  top: 70.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoB:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao7{
+  position: absolute;
+  margin-left: -12.7%;
+  top: 73.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao7:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao8{
+  position: absolute;
+  margin-left: -4.7%;
+  top: 73.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao8:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao9{
+  position: absolute;
+  margin-left: 3.6%;
+  top: 73.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao9:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoC{
+  position: absolute;
+  margin-left: 11.8%;
+  top: 73.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoC:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoAST{
+  position: absolute;
+  margin-left: -12.7%;
+  top: 77.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoAST:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotao0{
+  position: absolute;
+  margin-left: -4.7%;
+  top: 77.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotao0:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoHash{
+  position: absolute;
+  margin-left: 3.6%;
+  top: 77.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoHash:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+.bbotaoD{
+  position: absolute;
+  margin-left: 11.8%;
+  top: 77.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 7px;
+  border: none;
+  z-index: 5;
+  background-color: #131112;
+  color: #989789;
+  font-weight: bold;
+  font-size: medium;
+  box-shadow: -0.5px -0.5px 1px rgba(255, 255, 255, 0.4), 2px 2px black;
+}
+.bbotaoD:hover{
+  color: aliceblue;
+  background: #1a1919;
+  cursor: pointer;
+  zoom: 108%;
+}
+
+/*rodapé*/
+#barra {
+  line-height: 15px; /*distância entre linhas dos textos dentro da barrinha*/
+}
+#barra:hover{
+  height: 47%;
+}
+.informa {
+  transition: opacity 0.8s, transform 0.8s; /*ajuda na transição do texto*/
+  width: 120%;
+  transform: translateY(450px); /*ajusta a "hitbox" da transformação do efeito da barrinha subindo*/
+}
+.informa {
+  font-size: .6rem;
+  left: 100px;
+}
+.informa p, .informa h3 {
+  text-align: center;
+  padding: 5px;
+}
+
+.informa-esq {
+  left: 0px;
+  width: 40%;
+  top: -400px;
+}
+
+.informa-meio {
+  left: 0px;
+  width: 40%;
+  top: -320px;
+}
+
+.informa-dir {
+  left: 0px;
+  width: 40%;
+  top: -140px;
+}
+}

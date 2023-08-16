@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/telefone.png" type="image/png">
+    <title>Blue Box Game</title>
+    <script src="https://kit.fontawesome.com/e5c4d71670.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CapitaoCrunch/css/styleJogo.css">
+    <script src="./js/jsJogo.js" defer></script>
+</head>
+<body>
+  <header> 
+    <div class="dropdown">
+      <a href="../HP/index.html"><img class="dropb hp" src="./imagens/hp.png" alt="HP"></a> <!--  botão para ir para a página da HP -->
+    </div>
+    <br><br><br>
+      <div class="logo2">
+        <img class="logoCPN" src="imagens/logo2.png">
+      </div>
+    <br><br><br>
+  <div class="bot">
+    <div class="dropdown">
+      <a href="index.html"><img class="dropb" src="imagens/historia.png" alt="História"></a>
+      <div class="drop-conteudo">
+        <a href="exercito.html"><img src="imagens/exercito.png" alt="Exército"></a>
+        <a href="tecnicasPhreaking.html"><img src="imagens/asTecnicasDePhreaking.png" alt="As Técnicas de Phreaking"></a>
+        <a href="blueBox.html"><img src="imagens/blueBox.png" alt="A Blue Box"></a>
+        <a href="outrasCaixas.html"><img src="imagens/asOutrasCaixas.png" alt="As Outras Caixas"></a>
+        <a href="looping.html"><img src="imagens/looping.png" alt="O Looping"></a>
+        <a href="prisoes.html"><img src="imagens/prisoes.png" alt="Prisões"></a>
+        <a href="legado.html"><img src="imagens/legado.png" alt="Legado"></a>
+        <a href="draperAtualmente.html"><img src="imagens/draperAtualmente.png" alt="John Draper Atualmente"></a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="galeria.html"><img class="dropb" src="imagens/galeria.png" alt="Galeria"></a>
+    </div>
+    <div class="dropdown">
+      <a href="blueBoxGame.html"><img class="dropb" src="imagens/blueBoxGame.png" alt="Blue Box Game"></a>
+    </div>
+    <div class="dropdown">
+      <a href="cadastro.html"><img class="dropb" src="imagens/cadastro.png" alt="Cadastro"></a>
+    </div>
+  </div>
+</header>
+    <br><br><br><br><br>
+<div class="blueBox">
+<img class="imagemBlueBox" src="imagens/blueboxxx.png" alt="Blue Box">
+</div>
+<div class="botoesJogo">
+  <button id="botao1" class="bbotao1" onclick="toca1 ()" type="button">1</button>  
+  <button id="botao2" class="bbotao2" onclick="toca2 ()" type="button">2</button> 
+  <button id="botao3" class="bbotao3" onclick="toca3 ()" type="button">3</button>   
+  <button id="botaoA" class="bbotaoA" onclick="tocaA ()" type="button">A</button><br>
+  <button id="botao4" class="bbotao4" onclick="toca4 ()" type="button">4</button>    
+  <button id="botao5" class="bbotao5" onclick="toca5 ()" type="button">5</button>
+  <button id="botao6" class="bbotao6" onclick="toca6 ()" type="button">6</button>
+  <button id="botaoB" class="bbotaoB" onclick="tocaB ()" type="button">B</button><br>
+  <button id="botao7" class="bbotao7" onclick="toca7 ()" type="button">7</button>
+  <button id="botao8" class="bbotao8" onclick="toca8 ()" type="button">8</button> 
+  <button id="botao9" class="bbotao9" onclick="toca9 ()" type="button">9</button>  
+  <button id="botaoC" class="bbotaoC" onclick="tocaC ()" type="button">C</button><br>
+  <button id="botao*" class="bbotaoAST" onclick="tocaAST ()" type="button">*</button>            
+  <button id="botao0" class="bbotao0" onclick="toca0 ()" type="button">0</button>
+  <button id="botao#" class="bbotaoHash" onclick="tocaHash ()" type="button">#</button>  
+  <button id="botaoD" class="bbotaoD" onclick="tocaD ()" type="button">D</button>
+</div>
+<div id="DivContainer">
+  <div id="DivImagem"></div>
+</div>
+
+<div id="barra">
+  <div class="informa">
+    <div class="informa-esq">
+      <h3>Etec Guarulhos, 2023</h3>
+      <p>Trabalho Interdisciplinar do Curso Técnico de Desenvolvimento de Sistemas I</p>
+    </div>
+    <div class="informa-meio">
+      <h3>Alunos:</h3>
+      <p>Jhamil Cristian – RM: 23093 - <img src="./imagens/GitHub-MarKBLACKGREEN.png" height="2%" width="2%"> Cristiandiv</p>
+      <p>Marina Ribeiro Coral –  RM: 23182 - <img src="./imagens/GitHub-MarKBLACKGREEN.png" height="2%" width="2%"> MarinaCoral</p>
+      <p>Rômulo Ornelas de Oliveira Junior – RM: 23133 - <img src="./imagens/GitHub-MarKBLACKGREEN.png" height="2%" width="2%"> Parrylt</p>
+      <p>Vinicius Gonçalves - RM: 23148 - <img src="./imagens/GitHub-MarKBLACKGREEN.png" height="2%" width="2%"> ViniciusParanhos</p>
+    </div>
+    <div class="informa-dir">
+      <h3>Professores Responsáveis:</h3>
+      <p>Anselmo Paulo Florentino - Programação e Algoritmo /<br> Operação de Software Aplicativo</p>
+      <p>Israel Nuncio Dias Lucania - Design Digital</p>
+      <p>Rodrigo Vieira Campos - Programação Web I</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
