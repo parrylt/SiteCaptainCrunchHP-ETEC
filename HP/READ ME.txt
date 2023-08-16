@@ -1,0 +1,37 @@
+HP v5
+- dropb (botoes), centralizados utilizando o flexbox.
+- delete do <br> dentro do html no comeco do bloco1, para poder deixar um espaço
+ menor entre a imagem do topo e o proprio topo.
+- substuição de brs por hr para dar um toque de separacao entre os botoes 
+o bloco1 e a introd.
+
+(*)deve-se corrigir.
+HP v6
+- Implementação do rodape com animacao.
+- Correcao do tamanho sendo este diferente do Captain crunch.
+- Correcao no centralizado dos textos dentro do Rodapé.
+- Altura do indice da escola esta diferente dos demais.
+*- 
+
+HP v8
+- Delete curiosidades
+
+HP v9
+- Links do textos
+
+HP v10
+- Edicao da caixa de texto e divisao de botoes.
+**adicionar imagens e gif nas laterais do texto
+
+HP V11
+- Mudança no botao da pagina principal, mantendo "historia" e tirando o dropdown, mantendo so o dropdown na pagina
+da "historia" e mudando o nome para "Tópicos"
+
+HP v12
+- Icone top para voltar ao topo da pagina no index historia.
+- animacao nos botoes do header.
+- jogo da calculadora.
+
+HP 13
+- implementacao do jogo com a linha iframe.
+- correcao da tela inicial

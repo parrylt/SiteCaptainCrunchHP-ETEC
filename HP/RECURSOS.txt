@@ -1,0 +1,3 @@
+- https://www.pexels.com/pt-br/foto/pessoa-na-frente-do-laptop-na-mesa-de-madeira-marrom-2115217/
+- https://www.w3schools.com/css/css_z-index.asp#:~:text=The%20z-index%20property%20specifies%20the%20stack,front%20of%2C%20or%20behind%2C%20the%20others%29.&text=The%20z-index%20property%20specifies,or%20behind%2C%20the%20others%29.&text=property%20specifies%20the%20stack,front%20of%2C%20or%20behind%2C
+- https://receitasdecodigo.com.br/front-end/qual-unidade-de-medida-voce-usa-em-seu-css-px-em-ou-rem

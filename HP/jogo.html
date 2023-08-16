@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/jogo.css" />
+    <link rel="icon" href="imagens/faviconHPblack2.png">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <form class="box" id="form">
+      <h1 class="title">Calculadora</h1>
+      <textarea cols="40" rows="2" class="tela" autofocus id="tela"> </textarea>
+      <table>
+        <tr>
+          <td><button onclick="clean()" class="actions">C</button></td>
+          <td><button onclick="inserir('% *')" class="actions">%</button></td>
+          <td>
+            <button onclick="back()" class="actions">
+              <img src="imagens/delete-left-solid.svg" alt="delete-number" />
+            </button>
+          </td>
+          <td><button onclick="inserir('/')" class="actions">÷</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="inserir('7')">7</button></td>
+          <td><button onclick="inserir('8')">8</button></td>
+          <td><button onclick="inserir('9')">9</button></td>
+          <td><button onclick="inserir('*')" class="actions">x</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="inserir('4')">4</button></td>
+          <td><button onclick="inserir('5')">5</button></td>
+          <td><button onclick="inserir('6')">6</button></td>
+          <td><button onclick="inserir('-')" class="actions">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="inserir('1')">1</button></td>
+          <td><button onclick="inserir('2')">2</button></td>
+          <td><button onclick="inserir('3')">3</button></td>
+          <td><button onclick="inserir('+')" class="actions">+</button></td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="inserir('00')">00</button>
+          </td>
+          <td>
+            <button onclick="inserir('0')">0</button>
+          </td>
+          <td><button onclick="inserir('.')" class="actions">.</button></td>
+          <td>
+            <button type="submit" onclick="calcular()" class="actions">
+              =
+            </button>
+          </td>
+        </tr>
+      </table>
+      <span>&copy;HP Development Company</span>
+    </form>
+  </body>
+  <script src="js/jogo.js"></script>
+</html>

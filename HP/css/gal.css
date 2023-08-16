@@ -1,0 +1,375 @@
+body{
+    background-image: url("../imagens/imagemFundoHPblack.png");
+    font-family: 'Quicksand', sans-serif;
+    background-size: contain; /*CENTRALIZA A IMAGEM DE FUNDO OU PELO MENOS DEVERIA MUDAR DPS*/
+    background-position: top 10px;
+    
+}
+
+.bloco1
+{
+    width: 100%;
+    height: 5%;
+    background-image: url('../imagens/FundoLogo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bloco1 img
+{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.dropb {
+    background-color: none; /*fundo do botao "none" ou seja nenhum para destacar o hover*/
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none; 
+    display: flex; 
+    justify-content: center;  /*para centralizar os botões*/
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+
+.drop-conteudo {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 253, 253, 0.726); /*cor antiga = #2582c0b4*/
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.281);
+    z-index: 1;
+    font-size: 20px;
+}
+
+.drop-conteudo a {
+    color: rgb(5, 5, 5); /*cor = letras*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-conteudo a:hover {background-color: rgb(219, 219, 214);} /*cor fundo = drop rgb(0, 0, 0)*/  
+.dropdown:hover .drop-conteudo {display: block;}
+
+.dropdown:hover .dropb { /*ao passar o mouse por cima ele muda a cor das letras*/
+    background-color:none;  /*cor antiga = #2072b6c9*/
+    color:rgb(0, 148, 247) /*igual que no site orignal so as letras se iluminam*/
+} 
+
+.bot{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*IMAGENS*/
+.introd{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+.imagens{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subtitle{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#col1{
+  width: 100%;
+  height: 90%;
+}
+
+#col2{
+  width: 100%;
+}
+
+#col3{
+  width: 100%;
+  padding-top: 25px;
+}
+
+#col4{
+  width: 100%;
+  height: 90%;
+}
+
+#col5{
+  width: 100%;
+  padding-top: 20px;
+}
+
+#col6{
+  width: 100%;
+  padding-top: 20px;
+}
+
+#col7{
+  width: 100%;
+  height: 90%;
+}
+
+#col8{
+  width: 100%;
+  padding-top: 20px;
+}
+
+#col9{
+  width: 100%;
+  padding-top: 65px;
+}
+
+#col10{
+  width: 100%;
+  height: 90%;
+}
+
+#col11{
+  width: 100%;
+  padding-top: 100px;
+}
+
+#col12{
+  width: 100%;
+}
+
+#col13{
+  width: 100%;
+  height: 90%;
+}
+
+#col14{
+  width: 100%;
+}
+
+#col15{
+  width: 100%;
+  padding-top: 90px;
+}
+
+#col16{
+  width: 100%;
+  height: 90%;
+}
+
+#col17{
+  width: 100%;
+  padding-top: 90px;
+}
+
+#col18{
+  width: 90%;
+  padding-top: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/******************************/
+
+
+
+/*******VOLTAR AO TOPO******/
+
+.top
+{
+ position: fixed; /*posicao do icone fixada*/
+ bottom: 8%; /*espaco entre a borda e o icone rodape de 8%*/
+ right: 5%; /* espaco entre a borda e o icone direito de 5%*/
+}
+
+.top i 
+{
+  display: block; /**/
+  padding: 11px; /*preenchimento*/
+  font-size: 35px; /*tamanho da fonte do icone*/
+  color: rgb(0, 0, 0); 
+  background: #c7c8ca;
+  border-radius: 30px; /*borda arredondada*/
+  transition: all .50s ease;
+}
+
+.top a 
+{
+  text-decoration: none;
+}
+
+.top i:hover 
+{
+  transform: translateY(-7px);
+}
+
+/****/
+#voltar /*botâo voltar para o inìcio*/
+{
+    color: black; 
+    /*font-size: 30px;*/ /*tentei colocar o tamanho da fonte com 25 px dentro dessas chaves ele so pega a cor, nesse casoi o tamanho tive que colocar ele direto no HTMl com o "style"*/
+}
+
+.bot .dropdown a
+{
+    font-size: 25px;
+    text-decoration: none; /*esta linha deveria servir para poder retirar o sublinhado do link */
+}
+
+
+/*RODAPE*/
+#barra {
+  position: fixed; /* mantém a barrinha presa na parte de baixo */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px; /*altura da barrinha */
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9; /*opacidade pra ficar meio transparante*/
+  color: rgb(0, 148, 247);
+  /* font-family: 'Quicksand', sans-serif;
+  font-size: 18px; */
+  line-height: 25px; /*mexe na altura dos textos dentro da barrinha*/
+  /* padding-left: 20px; */
+  transition: 0.5s; 
+}
+#barra:hover {
+  height: 25%; /*passar mouse na barrinha e tamanho do retângulo*/
+}
+#barra:hover .informa {
+  opacity: 1; /*deixa a opacidade 0 de antes em 1 e faz aparecer o texto*/
+  transform: translateY(0); /* importante para o texto não ficar cortado pela página*/
+}
+.informa {
+  opacity: 0; /*deixa o texto invisível antes de passar o mouse*/
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  transition: opacity 0.5s, transform 0.5s; /*ajuda na transição do texto*/
+  transform: translateY(200px); /*ajusta a "hitbox" da transformação do efeito da barrinha subindo*/
+  /* font-weight: bold; */
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+.informa p, .informa h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.informa-esq {
+  position: absolute; /*esse e outros arrumam a posição dos blocos de texto para não ficar uma bagunça*/
+  left: 0;
+  width: 30%;
+  top: -200px;
+}
+
+.informa-meio {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  top: -200px;
+}
+
+.informa-dir {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  top: -200px;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  /* Estilos específicos para o Samsung Galaxy S20 Ultra */
+  /* Aqui você pode definir regras de CSS para ajustar o layout, tamanhos de fonte, espaçamento, etc. */
+  #barra:hover {
+    height: 30%; /*passar mouse na barrinha e tamanho do retângulo*/
+  }
+  .informa-meio {
+    top: -205px;
+  }
+  
+  .informa-dir {
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+  /* Estilos específicos para o Samsung Galaxy S20 Ultra */
+  /* Aqui você pode definir regras de CSS para ajustar o layout, tamanhos de fonte, espaçamento, etc. */
+  #barra {
+    line-height: 10px; /*mexe na altura dos textos dentro da barrinha*/
+  }
+  .informa {
+    transition: opacity 0.8s, transform 0.8s; /*ajuda na transição do texto*/
+  }
+  .informa {
+    font-size: .6rem;
+    display: flex;
+    justify-content: center;
+  }
+  .informa p, .informa h3 {
+    text-align: center;
+    padding: 6px;
+  }
+  
+  .informa-esq {
+    left: 0px;
+    width: 100%;
+    top: -240px;
+  }
+  
+  .informa-meio {
+    left: 0px;
+    width: 100%;
+    top: -190px;
+  }
+  
+ .informa-dir {
+    left: 0px;
+    width: 100%;
+    top: -75px;
+  }
+}
+
+/*RESPONSIVA DO CONTEUDO DO SITE (GALERIA)*/
+@media only screen and (max-width:915px) {
+  .bot{
+    display: block;
+    flex-wrap: wrap;
+  }
+  
+  .imagens{
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .top
+  {
+  position: fixed; /*posicao do icone fixada*/
+  bottom: 25px;
+  right: 1.4%;
+  }
+
+  .top i 
+  {
+    display: block; /**/
+    padding: 7px; /*preenchimento*/
+    font-size: 35px; /*tamanho da fonte do icone*/
+    color: rgb(0, 0, 0); 
+    background: #c7c8ca;
+    border-radius: 30px; /*borda arredondada*/
+    transition: all .50s ease;
+  }
+}

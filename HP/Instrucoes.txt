@@ -1,0 +1,7 @@
+dropdown a {
+    para cada botao tex-decoration:none; 
+    para apagar a sublinha dos links
+}
+
+Ver como aplicar isso para os drowpdown(botao com botoes dentro dele)
+tem que ter as mesmas fontes e o mesmo tamanho e o botao tem que estar na mesma cor.
